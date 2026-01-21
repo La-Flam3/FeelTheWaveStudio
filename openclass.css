@@ -1,0 +1,371 @@
+/* Open Class Specific Styles */
+
+.openclass-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('photo4.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.openclass-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 20px rgba(255, 140, 0, 0.5);
+}
+
+.openclass-intro {
+    padding: 4rem 0;
+    background: var(--bg-dark);
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+}
+
+/* Teachers Section */
+.teachers-section {
+    padding: 5rem 0;
+    background: var(--bg-black);
+}
+
+.teacher-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.teacher-card.featured {
+    border-color: var(--primary-orange);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.2);
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 140, 0, 0.3);
+}
+
+.teacher-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.teacher-icon {
+    font-size: 4rem;
+    min-width: 80px;
+    text-align: center;
+}
+
+.teacher-info h3 {
+    color: var(--primary-orange);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.teacher-specialty {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.teacher-content p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.lesson-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.lesson-highlights span {
+    background: rgba(255, 140, 0, 0.1);
+    color: var(--primary-orange);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 140, 0, 0.3);
+}
+
+/* Rotation Section */
+.rotation-section {
+    background: var(--bg-dark);
+    padding: 3rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    border: 2px solid var(--primary-orange);
+}
+
+.rotation-title {
+    color: var(--primary-orange);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.rotation-description {
+    text-align: center;
+    color: var(--text-gray);
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.teacher-mini-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.teacher-mini-card:hover {
+    border-color: var(--primary-orange);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 140, 0, 0.2);
+}
+
+.mini-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.teacher-mini-card h4 {
+    color: var(--primary-orange);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.teacher-mini-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Schedule Section */
+.schedule-section {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.schedule-card {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.schedule-card:hover {
+    border-color: var(--primary-orange);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 140, 0, 0.2);
+}
+
+.schedule-number {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-orange);
+    color: var(--bg-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.schedule-card h3 {
+    color: var(--primary-orange);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.schedule-card p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background: var(--bg-black);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button-outline {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: transparent;
+    color: var(--primary-orange);
+    text-decoration: none;
+    border: 2px solid var(--primary-orange);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.cta-button-outline:hover {
+    background: var(--primary-orange);
+    color: var(--bg-black);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.4);
+}
+
+.course-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    color: var(--primary-orange);
+    text-decoration: none;
+    border: 2px solid var(--primary-orange);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.course-link:hover {
+    background: var(--primary-orange);
+    color: var(--bg-black);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .openclass-hero {
+        min-height: 50vh;
+        margin-top: 100px;
+    }
+
+    .teacher-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button,
+    .cta-button-outline {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rotation-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .teacher-card {
+        padding: 1.5rem;
+    }
+}
+
+.course-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    color: var(--primary-orange);
+    text-decoration: none;
+    border: 2px solid var(--primary-orange);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.course-link:hover {
+    background: var(--primary-orange);
+    color: var(--bg-black);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+}
